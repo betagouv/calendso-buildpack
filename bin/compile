@@ -14,6 +14,7 @@ set -o pipefail
 set -u
 
 echo "=====> Start Calendso"
+source "${buildpack}/install_calendso.sh"
 
 BUILD_DIR=$1
 CACHE_DIR=$2
@@ -24,11 +25,7 @@ TMP_PATH="$BUILD_DIR/tmp"
 
 # install addons
 cd $BUILD_DIR
-$BP_DIR/bin/install_calendso.sh
-
-for d in errbackends errstorage plugins; do
-  [ -d "$d" ] || mkdir $BUILD_DIR/$d
-done
+fetch_calendso_dist "${BUILD_DIR}"
 
 echo "   scalingo-calendso-buildpack"
 
