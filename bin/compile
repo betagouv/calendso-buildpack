@@ -14,7 +14,6 @@ set -o pipefail
 set -u
 
 echo "=====> Start Calendso"
-source "${buildpack}/install_calendso.sh"
 
 BUILD_DIR=$1
 CACHE_DIR=$2
@@ -22,6 +21,7 @@ ENV_DIR=$3
 basedir="$( cd -P "$( dirname "$0" )" && pwd )"
 BP_DIR=`cd $(dirname $0); cd ..; pwd`
 TMP_PATH="$BUILD_DIR/tmp"
+source "${BP_DIR}/install_calendso.sh"
 
 # install addons
 cd $BUILD_DIR
