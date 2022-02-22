@@ -1,0 +1,10 @@
+[buildpack]
+name = "Calendso"
+
+  [publish.Ignore]
+  files = [
+    "env.sample/",
+    ".gitignore",
+    "Dockerfile",
+    "docker-compose.yml"
+  ]

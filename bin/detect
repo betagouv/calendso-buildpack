@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
-echo "Errbot"
+# Always accept the Keycloak buildpack
+echo "Calendso"
 exit 0
