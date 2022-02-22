@@ -67,13 +67,6 @@ fi
 cd $BUILD_DIR
 $BP_DIR/bin/install_calendso.sh
 
-# prepare conf
-echo "  Prepare conf"
-mkdir -p "$BUILD_DIR/bin"
-cp "$BP_DIR/scripts/run.sh" "$BUILD_DIR/bin/"
-
-[ -f "$BUILD_DIR/config.py" ] || cp "$BP_DIR/config.py" "$BUILD_DIR/config.py"
-
 for d in errbackends errstorage plugins; do
   [ -d "$d" ] || mkdir $BUILD_DIR/$d
 done
