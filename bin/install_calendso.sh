@@ -11,7 +11,5 @@ function fetch_calendso_dist() {
     calendso="https://github.com/calcom/cal.com/archive/refs/${calendso_version}.tar.gz"
     curl -sL $calendso | \
         tar zxvf - --strip-components 1 -C "$location"
-    )
-
     echo "Calendso backend installed"
 }
