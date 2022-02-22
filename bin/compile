@@ -77,7 +77,4 @@ else
   exit 1
 fi
 
-# prepare conf
-echo "  Prepare conf"
-mkdir -p "$BUILD_DIR/bin"
-cp "$BP_DIR/scripts/run.sh" "$BUILD_DIR/bin/"
+
