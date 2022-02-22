@@ -20,7 +20,7 @@ CACHE_DIR=$2
 ENV_DIR=$3
 basedir="$( cd -P "$( dirname "$0" )" && pwd )"
 BP_DIR=`cd $(dirname $0); cd ..; pwd`
-
+TMP_PATH="$BUILD_DIR/tmp"
 
 echo "## start here $basedir $BP_DIR $BUILD_DIR"
 cp $BP_DIR/.buildpacks $BUILD_DIR/.buildpacks
@@ -29,39 +29,8 @@ cp $BP_DIR/.buildpacks $BUILD_DIR/.buildpacks
 # https://github.com/Scalingo/multi-buildpack
 
 url=https://github.com/Scalingo/multi-buildpack
-branch=""
-dir=$(mktemp -t buildpackXXXXX)
-rm -rf $dir
 
-echo "=====> Downloading Buildpack: $url"
-
-if [[ "$url" =~ \.tgz$ ]] || [[ "$url" =~ \.tgz\? ]]; then
-  mkdir -p "$dir"
-  curl -s "$url" | tar xvz -C "$dir" >/dev/null 2>&1
-else
-  git clone $url $dir >/dev/null 2>&1
-fi
-cd $dir
-
-if [ "$branch" != "" ]; then
-  git checkout $branch >/dev/null 2>&1
-fi
-
-chmod -f +x $dir/bin/{detect,compile,release}
-
-framework=$($dir/bin/detect $1)
-
-if [ $? == 0 ]; then
-  echo "=====> Detected Framework: $framework"
-  $dir/bin/compile $BUILD_DIR $CACHE_DIR $ENV_DIR
-
-  if [ $? != 0 ]; then
-    exit 1
-  fi
-else
-  echo "calendso-buildpack `.buildpacks` not defined. Exiting."
-  exit 1
-fi
+echo "=====> Downloading Buildpack "
 
 # install addons
 cd $BUILD_DIR
