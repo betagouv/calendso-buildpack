@@ -22,16 +22,6 @@ basedir="$( cd -P "$( dirname "$0" )" && pwd )"
 BP_DIR=`cd $(dirname $0); cd ..; pwd`
 TMP_PATH="$BUILD_DIR/tmp"
 
-echo "## start here $basedir $BP_DIR $BUILD_DIR"
-cp $BP_DIR/.buildpacks $BUILD_DIR/.buildpacks
-
-# Use architecture of multi-buildpack to compose behavior.
-# https://github.com/Scalingo/multi-buildpack
-
-url=https://github.com/Scalingo/multi-buildpack
-
-echo "=====> Downloading Buildpack "
-
 # install addons
 cd $BUILD_DIR
 $BP_DIR/bin/install_calendso.sh
