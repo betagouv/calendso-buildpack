@@ -27,11 +27,11 @@ source "${BP_DIR}/bin/install_calendso.sh"
 # install addons
 cd $BUILD_DIR
 fetch_calendso_dist "${TMP_PATH}"
-# mv ${TMP_PATH}/cal.com-main/* "${BUILD_DIR}"
+mv ${TMP_PATH}/cal.com-main/* "${BUILD_DIR}"
 
 echo "scalingo-calendso-buildpack"
 
-# cp $BP_DIR/.buildpacks $BUILD_DIR/.buildpacks
+cp $BP_DIR/.buildpacks $BUILD_DIR/.buildpacks
 # cp $BP_DIR/scalingo.json $BUILD_DIR/scalingo.json
 # cp $BP_DIR/servers.conf.erb $BUILD_DIR/servers.conf.erb
 # Use architecture of multi-buildpack to compose behavior.
