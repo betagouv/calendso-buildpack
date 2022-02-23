@@ -37,8 +37,6 @@ cp $BP_DIR/servers.conf.erb $BUILD_DIR/servers.conf.erb
 # Use architecture of multi-buildpack to compose behavior.
 # https://github.com/Scalingo/multi-buildpack
 
-cp $BP_DIR/.env  $BUILD_DIR/apps/web/.env
-cp $BP_DIR/.env  $BUILD_DIR/packages/prisma/.env
 
 url=https://github.com/Scalingo/multi-buildpack
 branch=""
