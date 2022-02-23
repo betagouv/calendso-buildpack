@@ -12,7 +12,7 @@ function fetch_calendso_dist() {
     local dist="calendso"
     local dist_url="https://github.com/calcom/cal.com/archive/refs/${calendso_version}.tar.gz"
     if [ -f "${CACHE_DIR}/dist/${dist}" ]; then
-        info "File is already downloaded"
+        echo "File is already downloaded"
     else
         ${CURL} -o "${CACHE_DIR}/dist/${dist}" "${dist_url}"
     fi

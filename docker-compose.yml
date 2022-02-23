@@ -9,7 +9,6 @@ services:
         restart: 'always'
         volumes:
             - postgres_data:/var/lib/postgresql/data
-            - ./init-user-db/postgresql/init-user-db.sh:/docker-entrypoint-initdb.d/init-user-db.sh:ro
     # mysql: 
     #     image: mysql
     #     command: --default-authentication-plugin=mysql_native_password
