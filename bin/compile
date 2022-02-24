@@ -72,3 +72,5 @@ else
   echo "scalingo-calendso-buildpack `.buildpacks` not defined. Exiting."
   exit 1
 fi
+
+rm -rf $dir
