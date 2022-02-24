@@ -1,1 +1,1 @@
-web: npx turbo run @calcom/web#start
+web: (bin/run &) && npx turbo run @calcom/web#start
