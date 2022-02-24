@@ -69,8 +69,6 @@ if [ $? == 0 ]; then
     exit 1
   fi
 else
-  echo "scalingo-errbot-buildpack `.buildpacks` not defined. Exiting."
+  echo "scalingo-calendso-buildpack `.buildpacks` not defined. Exiting."
   exit 1
 fi
-
-turbo run clean && rm -rf node_modules
