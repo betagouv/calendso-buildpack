@@ -21,14 +21,14 @@ ENV_DIR=$3
 basedir="$( cd -P "$( dirname "$0" )" && pwd )"
 BP_DIR=`cd $(dirname $0); cd ..; pwd`
 TMP_PATH="$BUILD_DIR/tmp"
-mkdir -p "${TMP_PATH}" "${TMP_PATH}/calendso" "${CACHE_DIR}/dist" "${TMP_PATH}"
+mkdir -p "${TMP_PATH}" "${TMP_PATH}/calendso" "${CACHE_DIR}/dist"
 source "${BP_DIR}/bin/install_calendso.sh"
 
 # install addons
 cd $BUILD_DIR
 fetch_calendso_dist "${TMP_PATH}"
 mv ${TMP_PATH}/cal.com-main/* "${BUILD_DIR}"
-rm -rf ${TMP_PATH}
+rm -rf $TMP_PATH
 echo "scalingo-calendso-buildpack"
 
 cp $BP_DIR/.buildpacks $BUILD_DIR/.buildpacks
