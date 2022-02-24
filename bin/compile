@@ -34,6 +34,7 @@ echo "scalingo-calendso-buildpack"
 cp $BP_DIR/.buildpacks $BUILD_DIR/.buildpacks
 cp $BP_DIR/scalingo.json $BUILD_DIR/scalingo.json
 cp $BP_DIR/servers.conf.erb $BUILD_DIR/servers.conf.erb
+cp $BP_DIR/.slugignore $BUILD_DIR/.slugignore
 # Use architecture of multi-buildpack to compose behavior.
 # https://github.com/Scalingo/multi-buildpack
 
