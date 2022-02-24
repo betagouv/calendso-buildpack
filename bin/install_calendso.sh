@@ -17,5 +17,4 @@ function fetch_calendso_dist() {
         ${CURL} -o "${CACHE_DIR}/dist/${dist}" "${dist_url}"
     fi
     tar xzf "$CACHE_DIR/dist/${dist}" -C "$location"
-    rm -rf "$CACHE_DIR/dist/${dist}"
 }
