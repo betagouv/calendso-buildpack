@@ -1,4 +1,10 @@
-/tmp/cache
 LICENSE
 README.md
-/.cache/yarn
+CONTRIBUTING.md
+crowdin.yml
+package.json
+packages
+tests
+vercel.sh
+.cache
+.config
