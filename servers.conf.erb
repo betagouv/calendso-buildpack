@@ -10,6 +10,15 @@ server {
         try_files /static/index.html =404;
     }
 
+    location = /terms.html {
+        try_files /static/terms.html =404;
+    }
+
+    location = /policy.html {
+        try_files /static/policy.html =404;
+    }
+
+
     location / {
 
         auth_basic           on;
