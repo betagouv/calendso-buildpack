@@ -2,7 +2,6 @@ LICENSE
 README.md
 CONTRIBUTING.md
 crowdin.yml
-packages
 tests
 vercel.sh
 .cache
