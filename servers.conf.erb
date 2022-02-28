@@ -6,10 +6,6 @@ server {
     server_name _;
     listen <%= ENV['PORT'] %>;
 
-    location = / {
-        try_files /static/index.html =404;
-    }
-
     location / {
 
         auth_basic           on;
