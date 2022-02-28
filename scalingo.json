@@ -12,6 +12,9 @@
         "amount": 1,
         "size": "S"
       }
+    },
+    "scripts": {
+      "postdeploy": "cd packages/prisma && npx prisma migrate deploy"
     }
   }
   
