@@ -6,14 +6,9 @@ server {
     server_name _;
     listen <%= ENV['PORT'] %>;
 
-    location = /terms.html {
-        try_files /static/terms.html =404;
+    location = / {
+        try_files /static/index.html =404;
     }
-
-    location = /policy.html {
-        try_files /static/policy.html =404;
-    }
-
 
     location / {
 
