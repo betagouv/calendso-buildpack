@@ -7,7 +7,7 @@ server {
     listen <%= ENV['PORT'] %>;
 
     location = / {
-        root /static;
+        try_files /static/index.html =404;
     }
 
     location / {
