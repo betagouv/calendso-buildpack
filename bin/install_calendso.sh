@@ -8,10 +8,9 @@ CURL="curl -L --retry 15 --retry-delay 2" # retry for up to 30 seconds
 function fetch_calendso_dist() {
     local location="$1"
     local version="$2"
-    calendso_version="heads/master"
     echo "Calendso backend installed"
     local dist="calendso"
-    local dist_url="https://github.com/calcom/cal.com/archive/refs/${version}.tar.gz"
+    local dist_url="https://github.com/calcom/cal.com/archive/refs/cal.com-${version}.tar.gz"
     if [ -f "${CACHE_DIR}/dist/${dist}" ]; then
         echo "File is already downloaded"
     else

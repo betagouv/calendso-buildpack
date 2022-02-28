@@ -33,7 +33,7 @@ fi
 # install addons
 cd $BUILD_DIR
 fetch_calendso_dist "${TMP_PATH}" "${CALENDSO_VERSION}"
-mv ${TMP_PATH}/${CALENDSO_VERSION}/* "${BUILD_DIR}"
+mv ${TMP_PATH}/cal.com-${CALENDSO_VERSION}/* "${BUILD_DIR}"
 rm -rf $TMP_PATH
 echo "scalingo-calendso-buildpack"
 
