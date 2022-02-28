@@ -11,11 +11,11 @@ server {
     }
 
     location = /terms.html {
-        alias /static/terms.html =404;
+        try_files /static/terms.html =404;
     }
 
     location = /policy.html {
-        alias /static/policy.html =404;
+        try_files /static/policy.html =404;
     }
 
 
