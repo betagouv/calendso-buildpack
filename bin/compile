@@ -43,7 +43,7 @@ cp $BP_DIR/servers.conf.erb $BUILD_DIR/servers.conf.erb
 cp $BP_DIR/.slugignore $BUILD_DIR/.slugignore
 cp $BP_DIR/Procfile $BUILD_DIR/Procfile
 cp $BP_DIR/static/index.html $BUILD_DIR/static/index.html
-cp $BP_DIR/static/terms.html $BUILD_DIR/web/public/terms.html
+cp $BP_DIR/static/terms.html $BUILD_DIR/apps/web/public/terms.html
 # Use architecture of multi-buildpack to compose behavior.
 # https://github.com/Scalingo/multi-buildpack
 
