@@ -36,6 +36,7 @@ cp $BP_DIR/scalingo.json $BUILD_DIR/scalingo.json
 cp $BP_DIR/servers.conf.erb $BUILD_DIR/servers.conf.erb
 cp $BP_DIR/.slugignore $BUILD_DIR/.slugignore
 cp $BP_DIR/Procfile $BUILD_DIR/Procfile
+cp $BP_DIR/index.html $BUILD_DIR/index.html
 
 # Use architecture of multi-buildpack to compose behavior.
 # https://github.com/Scalingo/multi-buildpack
