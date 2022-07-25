@@ -5,6 +5,11 @@
       "calendso"
     ],
     "env": {
+        "NEXTAUTH_SECRET": "secret",
+        "NEXTAUTH_URL": {
+          "description": "Replace HEROKU_APP_NAME with the name given to your app",
+          "value": "https://HEROKU_APP_NAME.herokuapp.com"
+        }
     },
     "addons": ["postgresql:postgresql-sandbox"],
     "formation": {
@@ -14,7 +19,7 @@
       }
     },
     "scripts": {
-       "postdeploy":"yarn workspace @calcom/prisma db-deploy"
+        "postdeploy": "cd packages/prisma && npx prisma migrate deploy"
     }
-  }
-  
+}
+
