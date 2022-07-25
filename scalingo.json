@@ -12,6 +12,9 @@
         "amount": 1,
         "size": "S"
       }
+    },
+    "scripts": {
+       "postdeploy":"yarn workspace @calcom/prisma db-deploy"
     }
   }
   
