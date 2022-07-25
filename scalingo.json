@@ -19,7 +19,7 @@
       }
     },
     "scripts": {
-        "postdeploy": "yarn workspace @calcom/prisma db-deploy"
+        "postdeploy": "npm run db-deploy"
     }
 }
 
