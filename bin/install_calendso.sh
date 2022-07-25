@@ -10,7 +10,7 @@ function fetch_calendso_dist() {
     calendso_version="heads/master"
     echo "Calendso backend installed"
     local dist="calendso"
-    local dist_url="https://github.com/calcom/cal.com/archive/refs/${calendso_version}.tar.gz"
+    local dist_url="https://github.com/calcom/cal.com/archive/refs/tags/${calendso_version}.tar.gz"
     if [ -f "${CACHE_DIR}/dist/${dist}" ]; then
         echo "File is already downloaded"
     else
