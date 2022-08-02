@@ -1,2 +1,6 @@
 /tmp/cache
 /.cache/yarn
+yarn.lock
+CODE_OF_CONDUCT.md
+README.md
+LICENSE
