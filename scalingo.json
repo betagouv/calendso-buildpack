@@ -17,9 +17,6 @@
         "amount": 1,
         "size": "S"
       }
-    },
-    "scripts": {
-        "postdeploy": "npm run db-deploy"
     }
 }
 
