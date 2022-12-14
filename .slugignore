@@ -2,7 +2,6 @@
 /.cache/yarn
 ./node_modules/@storybook
 ./node_modules/.cache
-yarn.lock
 CODE_OF_CONDUCT.md
 README.md
 LICENSE
