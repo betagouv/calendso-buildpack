@@ -2,8 +2,8 @@
 /.cache/yarn
 ./node_modules/@storybook
 ./node_modules/.cache
-./node_modules/.yarn-integrity
-./node_modules/web3*
+./node_modules/@hubspot
+./node_modules/@hubspot/api-client
 CODE_OF_CONDUCT.md
 README.md
 LICENSE
