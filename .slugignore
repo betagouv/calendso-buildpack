@@ -2,6 +2,8 @@
 /.cache/yarn
 ./node_modules/@storybook
 ./node_modules/.cache
+./node_modules/.yarn-integrity
+web3*
 CODE_OF_CONDUCT.md
 README.md
 LICENSE
