@@ -3,7 +3,7 @@
 ./node_modules/@storybook
 ./node_modules/.cache
 ./node_modules/@hubspot
-./node_modules/@hubspot/api-client
+./node_modules/@prisma
 CODE_OF_CONDUCT.md
 README.md
 LICENSE
