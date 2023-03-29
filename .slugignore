@@ -3,11 +3,8 @@
 ./node_modules/@storybook
 ./node_modules/.cache
 ./node_modules/@hubspot
-./node_modules/@babel
-./node_modules/@formatjs/intl-displaynames
 ./node_modules/twilio
 ./node_modules/@coinbase
-./node_modules/@coinbase/wallet-sdk
 ./node_modules/@azure
 CODE_OF_CONDUCT.md
 README.md
