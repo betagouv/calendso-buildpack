@@ -2,10 +2,6 @@
 /.cache/yarn
 ./node_modules/@storybook
 ./node_modules/.cache
-./node_modules/@hubspot
-./node_modules/twilio
-./node_modules/@coinbase
-./node_modules/@azure
 CODE_OF_CONDUCT.md
 README.md
 LICENSE
