@@ -10,7 +10,6 @@
 ./node_modules/loader-utils
 ./node_modules/micromark-util-events-to-acorn
 ./node_modules/mkdirp-promise
-./node_modules/@panva
 ./node_modules/async
 ./node_modules/auth0
 ./node_modules/c8
@@ -26,7 +25,6 @@
 ./node_modules/css-loader
 ./node_modules/csstype
 ./node_modules/js-md4
-./node_modules/markdown-it
 ./node_modules/@mswjs
 ./node_modules/mysql2
 ./node_modules/remarkable
