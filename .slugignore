@@ -19,7 +19,6 @@
 ./node_modules/kbar
 ./node_modules/keccak
 ./node_modules/react-inspector
-./node_modules/react-select
 ./node_modules/redux
 ./node_modules/clipboardy
 ./node_modules/css-loader
@@ -28,7 +27,6 @@
 ./node_modules/@mswjs
 ./node_modules/mysql2
 ./node_modules/remarkable
-./node_modules/rrule
 ./node_modules/acorn-globals
 ./node_modules/acorn-jsx
 ./node_modules/@aws-crypto
