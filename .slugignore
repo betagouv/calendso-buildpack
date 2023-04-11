@@ -3,7 +3,6 @@
 ./node_modules/browserify-aes
 ./node_modules/buffer
 ./node_modules/cacheable-request
-./node_modules/fetch
 ./node_modules/jest-validate
 ./node_modules/jsonparse
 ./node_modules/klona
@@ -16,9 +15,7 @@
 ./node_modules/cli-highlight
 ./node_modules/got
 ./node_modules/jwks-rsa
-./node_modules/kbar
 ./node_modules/keccak
-./node_modules/react-inspector
 ./node_modules/redux
 ./node_modules/clipboardy
 ./node_modules/css-loader
