@@ -38,6 +38,8 @@ mv ${TMP_PATH}/cal.com-${CALENDSO_VERSION}/* "${BUILD_DIR}"
 rm -rf $TMP_PATH
 echo "scalingo-calendso-buildpack"
 
+rm $BUILD_DIR/package.json
+cp $BP_DIR/package.json $BUILD_DIR/package.json
 cp $BP_DIR/.buildpacks $BUILD_DIR/.buildpacks
 cp $BP_DIR/scalingo.json $BUILD_DIR/scalingo.json
 cp $BP_DIR/.slugignore $BUILD_DIR/.slugignore
