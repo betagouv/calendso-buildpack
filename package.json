@@ -10,6 +10,7 @@
     "packages/app-store/*",
     "packages/app-store/ee/*"
   ],
+  "cacheDirectories": ["web/node_modules", "api/node_modules", "api/storybook", "node_modules"],
   "scripts": {
     "app-store-cli": "yarn workspace @calcom/app-store-cli",
     "app-store:build": "yarn app-store-cli build",
