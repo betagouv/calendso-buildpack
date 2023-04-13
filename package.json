@@ -80,7 +80,8 @@
     "ts-jest": "^28.0.8"
   },
   "dependencies": {
-    "turbo": "^1.4.3"
+    "turbo": "^1.4.3",
+    "copy-webpack-plugin": "^11.0.0"
   },
   "resolutions": {
     "@apidevtools/json-schema-ref-parser": "9.0.9",
