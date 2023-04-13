@@ -30,7 +30,6 @@
 ./node_modules/@types/uuid
 ./node_modules/autoprefixer
 ./node_modules/babel-jest
-./node_modules/copy-webpack-plugin
 ./node_modules/detect-port
 ./node_modules/env-cmd
 ./node_modules/eslint
