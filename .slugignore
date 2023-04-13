@@ -3,7 +3,6 @@
 ./node_modules/@storybook
 ./node_modules/.cache
 ./node_modules/@babel/core
-./node_modules/@calcom/config
 ./node_modules/@calcom/types
 ./node_modules/@microsoft/microsoft-graph-types-beta
 ./node_modules/@playwright/test
