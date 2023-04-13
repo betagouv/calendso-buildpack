@@ -75,6 +75,38 @@
 ./node_modules/lint-staged
 ./node_modules/prettier
 ./node_modules/ts-jest
+# dev dependencies storybook
+./node_modules/@babel/core
+./node_modules/@types/react
+./node_modules/@types/react-dom
+./node_modules/@vitejs/plugin-react
+./node_modules/autoprefixer
+./node_modules/babel-loader
+./node_modules/fs
+./node_modules/postcss
+./node_modules/postcss-pseudo-companion-classes
+./node_modules/rollup-plugin-polyfill-node
+./node_modules/storybook-addon-designs
+./node_modules/storybook-addon-next
+./node_modules/storybook-react-i18next
+./node_modules/tailwindcss
+./node_modules/typescript
+./node_modules/vite
+# dev dependencies 
+./node_modules/@trivago/prettier-plugin-sort-imports
+./node_modules/@typescript-eslint
+./node_modules/@typescript-eslint
+./node_modules/eslint
+./node_modules/prettier
+./node_modules/prettier-plugin-tailwindcss
+./node_modules/tailwind-scrollbar
+./node_modules/tailwindcss
+# dev dependencies
+./node_modules/typescript
+./node_modules/chokidar
+./node_modules/@types/react
+./node_modules/eslint-plugin-react
+./node_modules/eslint-plugin-react-hooks
 CODE_OF_CONDUCT.md
 README.md
 LICENSE
