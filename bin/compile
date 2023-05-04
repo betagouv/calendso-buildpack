@@ -40,6 +40,9 @@ mv ${TMP_PATH}/cal.com-${CALENDSO_VERSION}/* "${BUILD_DIR}"
 
 rm $BUILD_DIR/package.json
 cp $BP_DIR/package.json $BUILD_DIR/package.json
+rm $BUILD_DIR/.yarnrc.yml
+cp $BP_DIR/.yarnrc.yml $BUILD_DIR/.yarnrc.yml
+
 # mv ${TMP_PATH}/cal.com-${CALENDSO_VERSION}/.* "${BUILD_DIR}"
 cp $BP_DIR/.buildpacks $BUILD_DIR/.buildpacks
 cp $BP_DIR/scalingo.json $BUILD_DIR/scalingo.json
