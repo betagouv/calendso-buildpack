@@ -94,7 +94,9 @@
   },
   "dependencies": {
     "city-timezones": "^1.2.1",
+    "copy-webpack-plugin": "^11.0.0",
     "eslint": "^8.34.0",
+    "lucide-react": "^0.130.0",
     "turbo": "^1.8.3"
   },
   "resolutions": {
@@ -116,7 +118,7 @@
     ]
   },
   "engines": {
-    "node": "=18.x",
+    "node": "=16.x",
     "npm": ">=7.0.0",
     "yarn": ">=3.4.1"
   },
