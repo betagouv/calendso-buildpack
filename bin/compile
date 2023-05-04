@@ -34,14 +34,13 @@ fi
 # install addons
 cd $BUILD_DIR
 fetch_calendso_dist "${TMP_PATH}" "v${CALENDSO_VERSION}"
-#shopt -s dotglob # mv dot files
+shopt -s dotglob # mv dot files
 mv ${TMP_PATH}/cal.com-${CALENDSO_VERSION}/* "${BUILD_DIR}"
 
 
 rm $BUILD_DIR/package.json
 cp $BP_DIR/package.json $BUILD_DIR/package.json
-cp $BP_DIR/.yarnrc.yml $BUILD_DIR/.yarnrc.yml
-# mv ${TMP_PATH}/cal.com-${CALENDSO_VERSION}/.yarn "${BUILD_DIR}"
+# mv ${TMP_PATH}/cal.com-${CALENDSO_VERSION}/.* "${BUILD_DIR}"
 cp $BP_DIR/.buildpacks $BUILD_DIR/.buildpacks
 cp $BP_DIR/scalingo.json $BUILD_DIR/scalingo.json
 cp $BP_DIR/.slugignore $BUILD_DIR/.slugignore
